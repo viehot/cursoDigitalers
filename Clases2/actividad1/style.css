@@ -1,6 +1,29 @@
-a {
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: Poppins;
+    color: #0a2ff1;
+    margin: 0px;
 }
-a:hover {
-    color: aqua;
+
+main {
+    margin-left: 5%;
+}
+
+h1 {
+    font-size: 78px;
+    font-weight: bold;
+}
+
+span {
+    background-color: #3ffff3;
+}
+
+p {
+    font-size: 30px;
+}
+
+img {
+    width: 400px;
+    background-image: url("/Clases2/actividad1/img/fondo.JPG");
 }
