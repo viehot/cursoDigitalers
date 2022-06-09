@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  grid-template-rows: repeat(6, 100px);
+  grid-template-areas:
+    "empty empty empty nav2 nav2 nav2"
+    "art art1 art1 foo foo foo"
+    "art art1 art1 foo foo foo"
+    "div . . . . ."
+    "div . . . . ."
+    "div . . . . ."
+    ;
+
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.nav {
+  background-color: aqua;
+  grid-area: nav2;
+}
+
+.article {
+  background-color: black;
+  color: wheat;
+  grid-area: art;
+}
+
+.article1 {
+  background-color: blueviolet;
+  grid-area: art1;
+}
+
+.footer {
+  background-color: blue;
+  grid-area: foo;
+}
+
+.div {
+    background-color: orange;
+    grid-area: div;
+}
