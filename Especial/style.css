@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Avenier;
+    src: url(/font/AvenirLTStd-Book.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #040714;
+    color: #F9F9F9;
+    font-family: Avenier;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.cont-img {
+    margin-left: 50px;
+}
+.img-logo {
+    width: 80px;
+}
+
+.cont-btn {
+    margin-right: 60px;
+}
+
+button {
+    width: auto;
+    padding: 13px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: Avenier;
+}
+
+.btn-sus {
+    background-color: #0084FF;
+    border: 1px solid #0084FF;
+}
+
+.btn-ses {
+    background-color: #010104;
+    border: 1px solid #F9F9F9;
+    transition: all .2s;
+}
+
+.btn-ses:hover {
+    background-color: #F9F9F9;
+    color: #010104;
+}
+
+/*    section     */
+
+.cont-sec {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+
+}
+
+.cont-sec-img {
+    width: 50%;
+}
+
+.img-sec {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cont-text {
+    width: 50%;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 767px) {
+    .cont-sec {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img-sec {
+        width: 100%;
+    }
+
+    .cont-text {
+        width: 100%;
+        text-align: center;
+        padding: 10%;
+    }
+}
